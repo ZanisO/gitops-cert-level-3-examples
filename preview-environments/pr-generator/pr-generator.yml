@@ -15,6 +15,7 @@ spec:
   template:
     metadata:
       name: 'myapp-{{.branch}}'
+      namespace: argocd
     spec:
       source:
         repoURL: 'https://github.com/ZanisO/gitops-cert-level-3-examples.git'
